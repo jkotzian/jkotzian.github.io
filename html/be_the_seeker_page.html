@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> James Kotzian - Virtual Reality Broom Flying </title>
+        <meta charset="UTF-8"> 
+        <script src="../jquery-1.11.3.min.js"></script>
+        <script src="../galleria/galleria-1.4.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class = "backButton">
+            <a href="../html/portfolio.html">
+                <img id=navportfolio class="JKButton" src="../images/back_button.png" 
+                onmouseover="selectedBack(this)" 
+                onmouseout="deselectedBack(this)" width = "8%"/>
+            </a>
+    </div>
+    <div class = "projectTitle">
+        Virtual Reality Broom Flying
+    </div>
+    <div class = "mainContainer">
+        <div class = "galleriaContainer">
+            <div class = "galleria">
+                <a href = "https://www.youtube.com/watch?v=quaCdJVrADw"><img src = "../images/broom_screenshot_2.png"></a>
+                <a href = "https://www.youtube.com/watch?v=8I2tAC7BR20"><img src = "../images/quidditch_video.jpg"></a>
+                <img src = "../images/broom_screenshot_3.png">
+                <img src = "../images/broom_screenshot_4.png">
+            </div>
+        </div>
+        <div class = "projectInfo">
+            <div class = "projectDescriptionHeader">
+                <img id=navportfolio src="../images/description.png" width="45%">
+            </a>
+        </div>
+            <div class = "projectDescription">
+                <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harry Potter is awesome. Wizards are awesome. Flying on a broomstick is awesome. This is all common knowledge. However, when it comes to these things, we've merely been observers. With Virtual Reality Broom Flying, you BECOME that high-flying wizard you've always wanted to be! The immersive virtual reality of the Oculus Rift combines with a motion-controlled broomstick to provide the most authentic broom-flying experience ever. So hop on your Nimbus 2000, we've got some sights to see!
+            <br>
+            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project was created at the University of Michigan's MHacks hackathon in Detroit in January of 2014. My team and I built the demo in Unity, utilizing the Oculus plugin for easy plug and play virtual reality support. Then, we used bluetooth to capture input data from the Wii remote in Unity (roll, pitch, yaw) and we transfered that data into an intuitive control scheme. From there, we spent the rest of our time crafting the world players flew around in with interesting things and Harry Potter landmarks. We had bludgers and birds that flew around, Hogwarts castle, Hagrids hut, and even a dragon that followed the player!
+            <br>
+            <br>    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;People were very receptive to the simulation, and we were invited to the show floor as one of the Top 7 teams. I had the honor of looking absolutely ridiculous by straddling a broom between my legs as we showed our project to the world. Amongst 238 teams and over 1000 hackers, we were awarded 2nd place in the competition. It was an amazing experience that I'll never forget.
+            <br>
+            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After the competition, I significantly improved the demo by re-doing the entire world, tweaking the control scheme, and making the broom respond more realistically. Doing this, I learned a great deal about Unity and how to craft an interesting world. I demoed this new and improved version the Techweek Detroit conference and at the Midwest Game Developer's Summit.
+            <br>
+            <br>
+            </div>
+            <div class = "projectDescriptionFooter">
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectedBack(x) {
+            x.src="../images/back_button_selected.png";
+        }
+        function deselectedBack(x) {
+            x.src="../images/back_button.png"; 
+        }
+    </script> 
+    <script>
+        Galleria.loadTheme('../galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+    </script>
+    </body>
+</html>

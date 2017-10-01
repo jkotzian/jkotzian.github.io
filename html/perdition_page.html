@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> James Kotzian - Perdition </title>
+        <meta charset="UTF-8"> 
+        <script src="../jquery-1.11.3.min.js"></script>
+        <script src="../galleria/galleria-1.4.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class = "backButton">
+            <a href="../html/portfolio.html">
+                <img id=navportfolio class="JKButton" src="../images/back_button.png" 
+                onmouseover="selectedBack(this)" 
+                onmouseout="deselectedBack(this)" width = "8%"/>
+            </a>
+    </div>
+    <div class = "projectTitle">
+        Perdition
+    </div>
+    <div class = "mainContainer">
+        <div class = "galleriaContainer">
+            <div class = "galleria">
+                <a href = "https://www.youtube.com/watch?v=42-T68WO928&feature=youtu.be"> <img src = "../images/Perdition%201.png"></a>
+                <img src = "../images/Perdition%202.png"> 
+                <img src = "../images/Perdition%203.png">
+                <img src = "../images/Perdition%204.png">
+                <img src = "../images/Perdition%206.png">
+                <img src = "../images/Perdition%207.png">
+                <img src = "../images/Perdition%208.png">
+                <img src = "../images/Perdition%209.png">
+                <img src = "../images/Perdition%205.png">
+            </div>
+        </div>
+        <div class = "projectInfo">
+            <div class = "projectDescriptionHeader">
+                <img id=navportfolio src="../images/description.png" width="45%">
+            </a>
+        </div>
+            <div class = "projectDescription">
+                <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You are a photographer taking some pictures of an undiscovered cave, when one misstep sends you down a hole so deep that it takes you into another world. In this place, hellish creatures roam and forgotten relics of the past dwell, and all the while the Lord of Time inches closer to you, hungry for your soul. With only your camera to stave off the beasts, can you make it back home? Or are you destined to stay forever in Perdition? 
+                <br>
+                <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This game was made for the first game jam I've ever participated in! It was hosted by the University of Michigan game development club, and the goal was to create a game in 38-hours that fit the theme "The End." I teamed up with two wonderful artists and took on the programming of the game, which was made in GameMaker. We thought that "The End" sounded pretty ominous, so we decided to make a 2D horror game. We wanted the player to feel weak in the game, but not totally helpless, so we gave them a camera that they could use to stun the low-level monsters in the game. To fit "The End," we wanted to have an ever-present force that approached the player and acted as a time limit for each stage. We eventually settled on the Lord of Time, who crawls in the background towards the player and causes a Game Over if he gets too close.
+                <br>
+                <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This game won our team 3rd place amongst 23 teams in the competition. I've since cleaned up some of the mechanics and added some levels. Enjoy!
+            <br>
+            <br>
+            </div>
+            <div class = "projectDescriptionFooter">
+                    <a href="../Perdition.exe" target="_blank">
+                        <img id=navportfolio class="JKButton" src="../images/download_button.png" 
+                        onmouseover="selectedDownload(this)" 
+                        onmouseout="deselectedDownload(this)" width = "150px"/>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectedDownload(x) {
+            x.src="../images/download_button_selected.png";
+        }
+        function deselectedDownload(x) {
+            x.src="../images/download_button.png"; 
+        }
+        function selectedBack(x) {
+            x.src="../images/back_button_selected.png";
+        }
+        function deselectedBack(x) {
+            x.src="../images/back_button.png"; 
+        }
+    </script> 
+    <script>
+        Galleria.loadTheme('../galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+    </script>
+    </body>
+</html>

@@ -1,46 +1,332 @@
 @charset "utf-8";
-.header {
+body {
+/*    background-color: #000028;*/
+    background: url("../images/blue_grid_pattern.png");
+    background-repeat: repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    margin: 0;
+    z-index: 1; /* Make this 1 so that the canvas will be in the background */
+}
+
+.welcomeText {
+    width: 100%; 
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.portfolioHeader {
+    height: 300px;
+/*    background: white;*/
+}
+
+.portfolioText {
+    width: 100%;
+    height: 50%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    vertical-align: text-bottom;
+    font-family: 'Play', sans-serif;
+/*    background: yellow;*/
+}
+
+.portfolioLogo {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+/*    background: blue;*/
+}
+
+.portfolioTable table {
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
+.portfolioTable table tr td {
+    border: 5px solid black;
+    padding: 0px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.portfolioImage { 
+    position: absolute;
+    top: 323px;
+    overflow: hidden;
+}
+
+.portfolioInfoBannerWhite {
+    width: 100%;
+    height: 40px;
+    background: rgba(255,255,255,.5);
+    position: relative;
+}
+
+.portfolioInfoBannerBlack {
+    width: 100%;
+    height: 40px;
+    background: rgba(255,255,255,.5);
+    position: relative;
+}
+
+.portfolioInfoBannerText {
+    font-size: 130%;
+    color: white;
+    top: 7px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-family: 'Play', sans-serif;
+}
+
+.portfolioImageAndBanner {
+
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.JKButton {
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.1s ease-in-out; /** Firefox **/
+    -o-transition: all 0.1s ease-in-out; /** Opera **/
+}
+
+.JKButton:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    -webkit-transform: scaleX(1.1) scaleY(1.1); /** Chrome & Safari **/
+    -o-transform: scaleX(1.1) scaleY(1.1); /** Opera **/
+    -moz-transform: scaleX(1.1) scaleY(1.1); /** Firefox **/
+}
+
+.PortfolioButton {
+    
+}
+
+.headerTop {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    clear: both;
+    z-index: 1;
+    text-align: center;
+}
+
+.JKLogo {
     width: 100%;
     height: auto;
-    background-color: #eef3f5;
     text-align: center;
+    vertical-align: text-bottom;
+    overflow: hidden;
+/*    background: blue;*/
 }
 
-.headerContent {
-    width: 100%;
-    margin: 0 auto;
-}
 .nav {
-    height: 40px;
-    width: auto;
-    margin-left: 700px;
-    margin-right: 700px;
-    background: #a7e0ee;
-    text-align: center;
-}
-
-.nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-.nav ul li {
-    list-style: none;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    float: left;
-    display: block;
-    padding: 10px 20px;
-    color: black;
-}
-
-.nav ul li a:hover {
-    color: white;   
-}
-.headerBreak {
     width: 100%;
-    height: 0;
-    border-bottom: 2px solid #a7e0ee;
+    height: auto;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.nav img {
+    min-width: 100px;   
+}
+
+.bioHeader {
+    width: 100%;
+    text-align: center;
+/*    background: white;*/
+}
+
+.bioIntroText {
+    width: 100%;
+    height: 100%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Play', sans-serif;
+/*    background: blue;*/
+}
+
+.bioPicture {
+    width: auto;
+/*    background: yellow;*/
+    text-align: left;
+    display: inline-block;
+    padding-right: 50px;
+    display: inline-block;
+    padding-left: 20px;
+/*    background: white;*/
+}
+
+.bioIntroSummary {
+    width: 100%;
+    text-align: justify;
+    font-size: 150%;
+    color: white;
+    font-family: 'Play', sans-serif;
+/*    background: yellow;*/
+}
+
+.bioIntro {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+/*    background: grey;*/
+    display: inline-block;
+}
+
+.bioHeaderIntroAndPic {
+    width: 100%;
+/*    background: red;*/
+}
+    
+.projectList {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+.boldedText {
+    font-weight: bold;
+    color: rgba(23,173,207,1);
+    display: inline-block;
+}
+
+.headerText {
+    font-weight: bold;
+    color: yellow;
+    display: inline-block;
+}
+
+.resumeText {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: 130%;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 400px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.galleriaContainer {
+    width: 59%;
+    text-align: right;
+    position: relative;
+    float: left
+}
+
+.galleria { 
+    width: 700px; 
+    height: 400px;
+    float: right;
+}
+
+.projectInfo {
+    width: 35%;
+    height: 100%;
+    vertical-align: text-bottom;
+    display: inline-block;
+/*    border: 8px solid yellow;*/
+}
+
+.projectDescriptionHeader {
+    width: 100%;
+    display: inline-block;
+    background: url("../images/yellow_grid_pattern.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    text-align: left;
+    z-index: 10;
+}
+
+.projectDescriptionHeader img {
+    height: 100%;
+    width: 45%;
+    min-width: 200px;
+}
+
+.projectDescription {
+    height: 71%;
+    color: white;
+    font-size: 110%;
+    text-align: justify;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Play', sans-serif;
+    background-color: #081317;
+/*    background: url("../images/blue_grid_pattern.png");
+    background-repeat: repeat-x;
+    background-size: cover; */
+}
+
+.projectDescriptionFooter {
+    height: 15%;
+/*    border-top: 5px solid silver;*/
+    text-align: center;
+    background: url("../images/yellow_grid_pattern.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.projectDescriptionFooter img {
+    min-width: 100px;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.centerButtonHelper {
+/*
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+*/
+}
+
+.backButton {
+    width: 57%;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.backButton img {
+    min-width: 100px;
+    margin-top: 5%;
+    margin-left: 10px;
+}
+
+.projectTitle {
+    color: white;
+    width: 40%;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: justify;
+    display: inline-block;
+    font-family: 'Play', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+    .galleriaContainer {
+        width: 100%;
+    }
+    .projectInfo {
+        width: 100%;
+    }
 }

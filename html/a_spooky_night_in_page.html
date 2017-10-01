@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> James Kotzian - A Spooky Night In</title>
+        <meta charset="UTF-8"> 
+        <script src="../jquery-1.11.3.min.js"></script>
+        <script src="../galleria/galleria-1.4.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <div class = "backButton">
+            <a href="../html/portfolio.html">
+                <img id=navportfolio class="JKButton" src="../images/back_button.png" 
+                onmouseover="selectedBack(this)" 
+                onmouseout="deselectedBack(this)" width = "8%"/>
+            </a>
+    </div>
+    <div class = "projectTitle">
+        A Spooky Night In
+    </div>
+    <div class = "mainContainer">
+        <div class = "galleriaContainer">
+            <div class = "galleria">
+                <a href = "https://www.youtube.com/watch?v=lOiUy_QZ2J4&feature=youtu.be"> <img src = "../images/spooky_screenshot_2.png"> </a>
+                <img src = "../images/spooky_screenshot_4.png">
+                <img src = "../images/spooky_screenshot_5.png">
+                <img src = "../images/spooky_screenshot_6.png">
+                <img src = "../images/spooky_screenshot_1.png">
+                <img src = "../images/spooky_screenshot_7.png">
+            </div>
+        </div>
+        <div class = "projectInfo">
+            <div class = "projectDescriptionHeader">
+                <img id=navportfolio src="../images/description.png" width="45%">
+            </a>
+        </div>
+            <div class = "projectDescription">
+                <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepare to be spooked! A Spooky Night In is an asymmetric multiplayer game that pits hunters against ghosts in a 2D dollhouse style mansion. Ghosts must possess and kill party guests using the environment, while hunters must find and kill the ghosts while minimizing the killing of the party guests.
+            <br>
+            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This game utilizes two monitors where two teams look on their own monitor. One team plays as ghosts, and the other as hunters. The hunter players' vision is limited by the lights turning on and off, while the ghost team is able to see everything at all times. At the end the round, the teams switch roles. The team with the most kills as the ghosts wins.
+            <br>
+            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This game was created in my game development class at the University of Michigan. It was completed in 7 weeks and shown at a showcase at the end of the semester. People had a lot of fun playing it, and our game was voted 3rd out of 24 games!
+            <br>
+            <br>
+            </div>
+            <div class = "projectDescriptionFooter">
+                <a href="../Pokemon/Pokemon.html" target="_blank">
+<!--
+                    <img id=navportfolio class="JKButton" src="../images/play_button.png" 
+                    onmouseover="selectedPlay(this)" 
+                    onmouseout="deselectedPlay(this)" width = "100px"/>
+-->
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectedPlay(x) {
+            x.src="../images/play_button_selected.png";
+        }
+        function deselectedPlay(x) {
+            x.src="../images/play_button.png"; 
+        }
+        function selectedBack(x) {
+            x.src="../images/back_button_selected.png";
+        }
+        function deselectedBack(x) {
+            x.src="../images/back_button.png"; 
+        }
+    </script> 
+    <script> Galleria.loadTheme('../galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+    </script>
+    </body>
+</html>
