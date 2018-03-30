@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
-/*    background-color: #000028;*/
-    background: url("../images/blue_grid_pattern.png");
+    background-color: #000028;
+    /*background: url("../images/blue_grid_pattern.png");*/
     background-repeat: repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,6 +40,98 @@ body {
     text-align: center;
     display: inline-block;
 /*    background: blue;*/
+}
+
+.portBannerLeftCol {
+    width: 30%;
+    float: left;
+/*    background: yellow;*/
+    height: 100%;
+}
+
+.portBannerMidCol {
+    width: 25%;
+/*    background: red;*/
+    float: left;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.portBannerRightCol {
+    width: 44%;
+    float: left;
+    height: 100%;
+    padding-left: 10px;
+    display: table;
+/*    background: blue;*/
+}
+
+.portBannerRightText {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    font-family: 'Play', sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.portfolioMayhemBanner {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background: #280848;
+    display: inline-block;
+    text-align: center;
+}
+
+.portLeftColImage {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-bottom: 15px;
+    text-align: center;
+    margin: auto
+/*    background: red;*/
+}
+
+.portMidColImageSmall {
+    width: auto;
+    height: 42.5%;
+    vertical-align: middle;
+    padding-top: 5%;
+}
+
+.portMidColImageLarge {
+    width: auto;
+    height: 95%;
+    vertical-align: middle;
+    padding-top: 5%;
+}
+
+.portfolioBlobblesBanner {
+    width: 100%;
+    height: 400px;
+    background: #003232; /*#003438FF;*/
+    display: inline-block;
+    text-align: center;
+}
+
+.portfolioSpookyBanner {
+    width: 100%;
+    height: 400px;
+    background: #720000;
+}
+
+.portfolioBannerHeaderText {
+    height: 20%;
+    font-size: 3vw;
+    color: white;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+/*    background: red; */
+    vertical-align: middle;
+    line-height: 80px;
 }
 
 .portfolioTable table {
@@ -114,6 +206,7 @@ table.center {
 .headerTop {
     width: 100%;
     height: 250px;
+    padding-top: 50px;
     position: relative;
     clear: both;
     z-index: 1;
@@ -198,14 +291,21 @@ table.center {
 
 .boldedText {
     font-weight: bold;
-    color: rgba(23,173,207,1);
+    color: white;
     display: inline-block;
 }
 
 .headerText {
     font-weight: bold;
-    color: yellow;
+    color: #ffbb00;
     display: inline-block;
+}
+
+.headerTextLarge {
+    font-weight: bold;
+    color: #ffbb00;
+    display: inline-block;
+    font-size: 36px;
 }
 
 .resumeText {

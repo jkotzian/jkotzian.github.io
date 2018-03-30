@@ -182,10 +182,10 @@ function main() {
                 // Randomly color it blue or yellow
                 var random_color = Math.floor(Math.random() * 2);
                 if (random_color == 1) {
-                    shape.graphics.beginFill("rgba(23,173,207,1)").drawRect(0, 0, bounds.width, bounds.height);
+                    shape.graphics.beginFill("rgba(0,25,151,1)").drawRect(-2, 0, bounds.width + 4, bounds.height);
                 }
                 else {
-                    shape.graphics.beginFill("yellow").drawRect(0, 0, bounds.width, bounds.height);   
+                    shape.graphics.beginFill("rgba(255,187,0,1)").drawRect(-2, 0, bounds.width + 4, bounds.height);   
                 }
                 shape.id = 1;
                 // Update the cached shape so it changes
