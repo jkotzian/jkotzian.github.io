@@ -9,7 +9,9 @@
 <body>
     <div class = "portfolioHeader">
         <div class = "portfolioLogo">
-            <a href="../index.html" ><img id=JKLogo class=JKButton src="../images/logo.png" width="25%" height="auto"></a>
+            <a href="../index.html" ><img id=JKLogo class=JKButton src="../images/logo.png" width="25%" height="auto" 
+                     onmouseover="selectedLogo(this)" 
+                     onmouseout="deselectedLogo(this)"></a>
         </div>
         <div class = "portfolioText"> 
             Things I've Done
@@ -19,7 +21,7 @@
         <div class = "portBannerLeftCol">
             <div class = "portfolioBannerHeaderText"> Agents of Mayhem </div>
             <div class = "portLeftColImage">
-                <a href="https://www.aomthegame.com/" target="_blank"><img class = JKButton height = "auto" width = "100%" src="../images/aom.jpg"></a> 
+                <a href="https://www.aomthegame.com/" target="_blank"><img class = JKButton src="../images/aom.jpg"></a>
             </div>
         </div>
         <div class = "portBannerMidCol">
@@ -42,11 +44,13 @@
         <div class = "portBannerLeftCol">
             <div class = "portfolioBannerHeaderText"> Blobbles </div>
             <div class = "portLeftColImage">
-                    <a><img class = JKButton height = "auto" width = "60%" src="../images/Blobbles_1.png"></a> 
+                    <a><img class = JKButton src="../images/Blobbles_1.png"></a> 
             </div>
         </div>
         <div class = "portBannerMidCol">
-            <img class = "portMidColImageLarge" src="../images/Blobbles_Gif.gif">
+            <div class = "portMidColImageLarge">
+                <span class="helper"></span><img src="../images/Blobbles_Gif.gif">
+            </div>
         </div>
         <div class = "portBannerRightCol">
             <div class = "portBannerRightText">
@@ -62,22 +66,56 @@
         <div class = "portBannerLeftCol">
             <div class = "portfolioBannerHeaderText"> A Spooky Night In </div>
             <div class = "portLeftColImage">
-                    <a><img class = JKButton height = "auto" width = "75%" src="../images/aSpookyNightInLogo.png"></a> 
+                    <a><img class = JKButton src="../images/aSpookyNightInLogo.png"></a> 
             </div>
         </div>
         <div class = "portBannerMidCol">
-            <img class = "portMidColImageLarge" src="../images/Blobbles_Gif.gif">
+            <img class = "portMidColImageSmall" src="../images/Portfolio_Spooky_Gif_2.gif">
+            <img class = "portMidColImageSmall" src="../images/Portfolio_Spooky_Gif.gif">
         </div>
         <div class = "portBannerRightCol">
             <div class = "portBannerRightText">
-                A Spooky Night In is an asymmetric multiplayer game that pits hunters against ghosts in a 2D dollhouse style mansion during a cocktail party. Ghosts must possess and kill party guests using the environment, while hunters must find and kill the ghosts while minimizing the killing of the party guests. 
+                A Spooky Night In is an asymmetric multiplayer game that pits hunters against ghosts in a 2D dollhouse style mansion during a cocktail party. Ghosts must discreetly possess and kill party guests using the environment, while hunters must find and kill the ghosts while minimizing the killing of the party guests. 
                 <br>
                 <br>
-                This was a student project made in Unity and completed in 7 weeks. I did the game design, art, and about half of the programming. At the public class showcase, the game was voted 3rd out of 24 games by the audience.
+                This was a student project made in Unity and completed in 7 weeks. I did the game design, art, and about half of the programming. At the public showcase for the class, the game was voted 3rd out of 24 games by the audience.
             </div>
         </div>
         <br style="clear: left;"/>
     </div>
+        <div class = "portfolioWaywardBanner">
+        <div class = "portBannerLeftCol">
+            <div class = "portfolioBannerHeaderText"> Wayward Souls </div>
+            <div class = "portLeftColImage">
+                <a><img class = JKButton src="../images/waywardLogo.png"></a> 
+            </div>
+        </div>
+        <div class = "portBannerMidCol">
+            <div class="portMidColImageLarge">
+                <span class="helper"></span><img src="../images/Wayward.gif">
+            </div>
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                Wayward Souls is a top-down shooter that tasks the player with surviving the night in the midst of possessed statues that move towards the player when they aren't watching. Armed with a shotgun with limited ammo, the player must make high-stakes decisions as to which statues are possessed and which are not.
+                <br> <br>
+                I developed this game in one week in an exercise of rapid prototyping.
+            </div>
+        </div>
+        <br style="clear: left;"/>
+    </div>
+    <br>
+    <br>
+    <div class="nav">
+        <a href="bio.html">
+            <img id=navbio class="JKButton" src="../images/NavBio.png" 
+                 onmouseover="selectedBio(this)" 
+                 onmouseout="deselectedBio(this)" width="15%" height="auto">
+        </a>
+    </div>
+    <br>
+    <br>
+<!--
     <div class = "portfolioTable">
         <table class="center">
             <tr>
@@ -173,7 +211,6 @@
                         </div>
                     </div>
                 </td>
-<!--
                 <td>
                     <a href="naval_warfare_page_protected.html">
                     <img id=navalLogo class=JKButton src="../images/naval_screenshot.PNG" width = 281 height = 241 style="display: block"</img>
@@ -184,9 +221,23 @@
                         </div>
                     </div>
                 </td>
--->
             </tr>
         </table>
     </div>
+-->
+    <script>
+        function selectedLogo(x) {
+        x.src="../images/logo-highlighted.png";   
+    }
+    function deselectedLogo(x) {
+        x.src="../images/logo.png";
+    }
+    function selectedBio(x) {
+        x.src="../images/NavBioSelected.png";   
+    }
+    function deselectedBio(x) {
+        x.src="../images/NavBio.png";
+    }
+    </script>
 </body>
 </html>

@@ -9,7 +9,9 @@
 <body>
     <div class = "bioHeader">
         <div class = "JKLogo">
-            <a href="../index.html"><img id=JKLogo class=JKButton src="../images/logo.png" width="25%" height="auto"></img></a>
+            <a href="../index.html"><img id=JKLogo class=JKButton src="../images/logo.png" width="25%" height="auto" 
+                                         onmouseover="selectedLogo(this)" 
+                                         onmouseout="deselectedLogo(this)"></a>
         </div>
         <div class = "bioHeaderIntroAndPic">
             <div class="bioIntro">
@@ -53,8 +55,29 @@
         <br>
         Feel free to reach out to me at either my email or cell :) <br>
         <br>
-        <br>
-        <br>
     </div>
+    <div class="nav">
+        <a href="../html/portfolio2.html">
+            <img id=navportfolio class="JKButton" src="../images/NavPortfolio.png" 
+                 onmouseover="selectedPort(this)" 
+                 onmouseout="deselectedPort(this)" width="15%" height="auto">
+        </a>
+    </div>
+    <br>
+    <br>
+    <script>
+    function selectedPort(x) {
+        x.src="../images/NavPortfolioSelected.png";
+    }
+    function deselectedPort(x) {
+        x.src="../images/NavPortfolio.png" 
+    }
+    function selectedLogo(x) {
+        x.src="../images/logo-highlighted.png";   
+    }
+    function deselectedLogo(x) {
+        x.src="../images/logo.png";
+    }  
+    </script>
 </body>
 </html>
