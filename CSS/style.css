@@ -96,10 +96,18 @@ a:visited {
     text-align: left;
 }
 
+.portfolioSaintsBanner {
+    width: 100%;
+    height: 400px;
+    background: black;
+    display: inline-block;
+    text-align: center;
+    min-width: 1400px;
+}
+
 .portfolioMayhemBanner {
     width: 100%;
     height: 400px;
-    margin-top: 50px;
     background: #280848;
     display: inline-block;
     text-align: center;
@@ -151,6 +159,8 @@ a:visited {
     width: 100%;
     text-align: center;
     white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 200px;
 }
 
 .portMidColImageLarge img {
@@ -163,7 +173,7 @@ a:visited {
 .portfolioBlobblesBanner {
     width: 100%;
     height: 400px;
-    background: #003232; /*#003438FF;*/
+    background: #001939;
     display: inline-block;
     text-align: center;
     min-width: 1400px;
@@ -245,6 +255,11 @@ a:visited {
 
 .portfolioImageAndBanner {
 
+}
+
+.MartianMixerLogo {
+    padding-top: 0px;
+    text-align: center;
 }
 
 table.center {
@@ -334,6 +349,7 @@ table.center {
     font-size: 150%;
     color: white;
     font-family: 'Play', sans-serif;
+/*    font-size: 1.5vw;*/
 /*    background: yellow;*/
 }
 
@@ -366,6 +382,8 @@ table.center {
     font-weight: bold;
     color: #ffbb00;
     display: inline-block;
+    font-size: 25px;
+/*    font-size: 1.5vw;*/
 }
 
 .headerTextLarge {
@@ -496,4 +514,8 @@ table.center {
     .projectInfo {
         width: 100%;
     }
+}
+.martianMixerVideo {
+    text-align: center;
+    vertical-align: middle;
 }

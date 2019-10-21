@@ -1,20 +1,474 @@
 <!DOCTYPE html>
 <html>
+    <style amp-custom>
+      html{
+        word-break: break-word;
+        font-family: 'Fredoka One', cursive;
+        font-size: 1em;
+      }
+      .light{
+        background-color: #ffffd3;
+        color: #8a2834;
+      }
+      .light a{
+        color: #8a2834;
+      }
+      .dark{
+        background-color: #8a2834;
+        color: #fbf8d4;
+      }
+      .dark a{
+        color: #ffe31d;
+      }
+      .yellow{
+        background-color: #ffe31d;
+        color: #8a2834;
+          
+      }
+      body {
+        background-color: black;
+      }
+      .nav {
+        display: block;
+        width: 100%;
+      }
+      .hamburger {
+        padding: 15px;
+        text-align: right;
+        font-size: 1.7rem;
+        font-weight: 900;
+      }
+      #landing-animation amp-iframe {
+        max-height: 400px;
+      }
+      #landing-animation amp-iframe {
+        max-height: 400px;
+      }
+      #store-bar {
+        width: 800px;
+        margin: auto;
+        max-width: 80%;
+      }
+      #store-bar .link {
+        width: 30%;
+        display: block;
+        float: left;
+        padding: 10px 0px;
+        margin: 1%;
+      }
+      #store-bar .link.single {
+        margin: auto;
+        float: none;
+      }
+      #store-bar .link amp-img {
+        background-color: blue;
+      }
+      #ear-bar {
+        position: relative;
+        top: 5px;
+      }
+      #ear-bar amp-img {
+        max-height: 100px;
+      }
+      #gameplay-video{
+        width: 110%;
+        padding-top: 20px;
+        padding-bottom: 90px;
+          padding-left: 0px;
+          background: inherit;
+      }
+      #gameplay-video amp-youtube {
+        max-width: 90%;
+        width: 500px;
+        margin: auto;
+      }
+      .i-amphtml-slide-item {
+        max-width: 338px;
+        left: 82px;
+        margin: 0px 5px;
+      }
+      #gallery amp-carousel {
+        width: 800px;
+        margin: auto;
+        max-width: 90%;
+      }
+      #gallery-container{
+        padding: 8vh 0px 6vh 0px;
+      }
+      #gallery-contents{
+        width: 800px;
+        margin: auto;
+        max-width: 90%;
+        overflow: hidden;
+      }
+      .clearfix {
+        width: 100%;
+        clear: both;
+      }
+      #sidebar1 a {
+        display: block;
+        margin: 40px 4%;
+        text-align: center;
+        text-decoration: none;
+      }
+      #sidebar1 {
+        width: 70%;
+        max-width: 250px;
+      }
+      #social{
+        height: 60px;
+        width: 90%;
+        max-width: 400px;
+        margin: 0px auto 15px auto;
+      }
+      #footer{
+        padding: 20px 0px;
+        text-align: center;
+      }
+      #footer p, #footer a{
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 800px;
+      }
+      #gallery-ears{
+        top:-50px;
+        margin-bottom: 50px;
+      }
+      #social amp-img {
+        width: 25%;
+        float: left;
+      }
+      #landing-animation img.i-amphtml-replaced-content {
+
+      }
+      #image-paragraphs .item-heading{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size: 3vw;
+        color: white;
+    /*    color: #FFC639;*/
+
+      }
+      #newsletter p {
+        text-align: center;
+      }
+      #image-paragraphs .item amp-img#top-image-paragraph{
+        max-height: 240px;
+      }
+      @media screen and (max-width: 600px) {
+        #image-paragraphs .item p {
+            width: 80%;
+            max-height: 150px;
+            text-align: center;
+            margin: auto;
+        }
+        #image-paragraphs .item amp-img#top-image-paragraph{
+            max-height: 195px;
+        }
+        #image-paragraphs .item amp-img {
+            width: 80%;
+            max-height: 150px;
+            margin: auto;
+            display: block;
+        }
+        #image-paragraphs .item {
+          margin: 43px 0px;
+          background-color: red;
+        }
+      }
+      @media screen and (min-width: 601px){
+        #image-paragraphs{
+          padding-top: 20px;
+          width: 900px;
+          margin: auto;
+          max-width: 90%;
+        }
+        #image-paragraphs .item amp-img {
+            width: 50%;
+            clear: both;
+            top: 25px;
+            max-height: 200px;
+            margin-bottom: 20px;
+        }
+        #image-paragraphs .item p{
+          width: 50%;
+        }
+        #image-paragraphs .item:nth-child(odd) amp-img{
+          float: right;
+        }
+        #image-paragraphs .item:nth-child(odd) p{
+          float: left;
+          text-align: right;
+        }
+        #image-paragraphs .item:nth-child(even) amp-img{
+          float: left;
+        }
+        #image-paragraphs .item:nth-child(even) p{
+          float: right;
+        }
+      }
+
+      @media screen and (max-width: 520px) {
+        #gallery-contents {
+            height: 120vw;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        #gallery-contents {
+            height: 115vw;
+        }
+      }
+      @media screen and (max-width: 440px) {
+        #gallery-contents {
+            height: 110vw;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        #gallery-contents {
+            height: 105vw;
+        }
+      }
+      @media screen and (max-width: 360px) {
+        #gallery-contents {
+            height: 100vw;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        #gallery-contents {
+            height: 95vw;
+        }
+      }
+      @media screen and (min-width: 521px) {
+        #gallery-contents {
+            height: 52vw;
+            max-height: 470px;
+        }
+      }
+      @media screen and (max-width: 749px) {
+        #store-bar .link {
+          width: 80%;
+          max-width: 200px;
+          display: block;
+          float: none;
+          margin: 0px auto;
+        }
+      }
+    </style>
 <head>
     <title> Portfolio </title>
     <meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="../myfavicon.ico" />
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <amp-analytics type="googleanalytics" id="analytics1"> </amp-analytics>
 </head>
 <body>
     <div class = "portfolioHeader">
         <div class = "portfolioLogo">
-            <a href="../index.html" ><img id=JKLogo class=JKButton src="../images/logo.png" width="25%" height="auto"></a>
+            <a href="../index.html" ><img id=JKLogo class=JKButton src="../images/logo.png" width="25%" height="auto" 
+                     onmouseover="selectedLogo(this)" 
+                     onmouseout="deselectedLogo(this)"></a>
         </div>
         <div class = "portfolioText"> 
             Things I've Done
         </div>
     </div>
+    <div class = "portfolioSaintsBanner">
+        <div class = "portBannerLeftCol">
+            <div class = "portfolioBannerHeaderText"> Saints Row Project</div>
+            <div class = "portLeftColImage">
+                <a href="https://www.polygon.com/2019/8/14/20805385/new-saints-row-game-thq-nordic-volition-timesplitters-dead-island" target="_blank"><img src="../images/volitionLogo.jpg"></a>
+            </div>
+        </div>
+        <div class = "portBannerMidCol">
+            <img class = "portMidColImageSmall" src="../images/Saints_III_2.jpg">
+            <img class = "portMidColImageSmall" src="../images/Saints_IV_4.jpg">
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                I am designing and scripting missions in Volition's upcoming Saints Row title. I work closely with writers, artists, and programmers to ensure that everything comes together into a single cohesive and compelling player experience.
+                <br>
+                <br>
+                That's about all I can say, although I can't wait to share more info once it's publicly available!
+            </div>
+        </div>
+        <br style="clear: left;"/>
+    </div>
+    <div class = "portfolioMayhemBanner">
+        <div class = "portBannerLeftCol">
+            <div class = "portfolioBannerHeaderText"> Agents of Mayhem </div>
+          <div id="gameplay-video" class="light">
+              <amp-youtube
+                data-videoid="eeTmw7yN2CU"
+                layout="responsive"
+                width="355" height="200">
+              </amp-youtube>
+          </div>
+        </div>
+        <div class = "portBannerMidCol">
+            <img class = "portMidColImageSmall" src="../images/gat_1.gif">
+            <img class = "portMidColImageSmall" src="../images/joule_1.gif">
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                In this third-person open-world action game, the player leads the titular Agents of Mayhem: a gang of super agents tasked with stopping the nefarious terrorist organization known as LEGION from global domination.
+                <br>
+                <br>
+                I was responsible for iterating on the design of five of the 12 initial playable agents in the game and scripted several side missions. Later, I designed and implemented two of the playable DLC agents from the ground up (<a href = "https://www.youtube.com/watch?v=N-dMLLUUsjw" target="_blank">Gat </a> and <a href = "https://www.youtube.com/watch?v=fhMc9-SAWbg" target="_blank">Safeword</a>).
+                <br> <br>
+                <i>"It’s something special. Like Uranus." </i> - <a href = "https://kotaku.com/agents-of-mayhem-the-kotaku-review-1797840217" target="_blank"> Kotaku</a>
+            </div>
+        </div>
+        <br style="clear: left;"/>
+    </div>
+    <div class = "portfolioBlobblesBanner" >
+        <div class = "portBannerLeftCol">
+        <div class = "portfolioBannerHeaderText"> Martian Mixer </div>
+          <div id="gameplay-video" class="light">
+              <amp-youtube
+                data-videoid="ulv9aQFbIRg"
+                layout="responsive"
+                width="355" height="200">
+              </amp-youtube>
+          </div>
+<!--            <div class = "portfolioBannerHeaderText"> Martian Mixer </div>-->
+<!--
+            <div class = "portLeftColImage"> 
+                    <a><img src="../images/martian_mixer_logo.png"></a> 
+            </div>
+-->
+        </div>
+        <div class = "portBannerMidCol">
+            <div class = "portMidColImageLarge">
+                <span class="helper"></span><img src="../images/martian_mixer_5.gif">
+            </div>
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                Martian Mixer is a puzzle game about mixing up colorful little aliens to help them mingle at out-of-this-world parties. It plays like the opposite of a Match 3 game and has a subtle, pro-diversity message.
+                <br>
+                <br>
+                This is a passion project I am developing in Unity with the goal of making a game-for-change game where the message is conveyed through the mechanics and not just the story. I plan to release on iOS and Android in early 2020.
+            </div>
+        </div>
+        <br>
+        <br>
+        <br style="clear: left;"/>
+<!--         Keep this at the end of the regular banner area!!-->  
+    </div>
+
+    <div class = "portfolioSpookyBanner" >
+        <div class = "portBannerLeftCol">
+            <div class = "portfolioBannerHeaderText"> A Spooky Night In </div>
+        <div id="gameplay-video" class="light">
+              <amp-youtube
+                data-videoid="lOiUy_QZ2J4"
+                layout="responsive"
+                width="355" height="200">
+              </amp-youtube>
+          </div>
+<!--
+            <div class = "portLeftColImage">
+                    <a><img src="../images/aSpookyNightInLogo.png"></a> 
+            </div>
+-->
+        </div>
+        <div class = "portBannerMidCol">
+            <img class = "portMidColImageSmall" src="../images/Portfolio_Spooky_Gif_2.gif">
+            <img class = "portMidColImageSmall" src="../images/Portfolio_Spooky_Gif.gif">
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                A Spooky Night In is an asymmetric multiplayer game that pits hunters against ghosts in a 2D dollhouse style mansion during a cocktail party. Ghosts must discreetly possess and kill party guests using the environment, while hunters must find and kill the ghosts while minimizing the killing of the party guests. 
+                <br>
+                <br>
+                This was a student project made in Unity and completed in 7 weeks. I did the game design, art, and about half of the programming. At the public showcase for the class, the game was voted 3rd out of 24 games by the audience.
+            </div>
+        </div>
+        <br style="clear: left;"/>
+    </div>
+    <div class = "portfolioWaywardBanner">
+        <div class = "portBannerLeftCol">
+            <div class = "portfolioBannerHeaderText"> Wayward Souls </div>
+            <div id="gameplay-video" class="light">
+              <amp-youtube
+                data-videoid="E3KsuVijbrM"
+                layout="responsive"
+                width="355" height="200">
+              </amp-youtube>
+            </div>
+<!--
+            <div class = "portLeftColImage">
+                <a><img src="../images/waywardLogo.png"></a> 
+            </div>
+-->
+        </div>
+        <div class = "portBannerMidCol">
+            <div class="portMidColImageLarge">
+                <span class="helper"></span><img src="../images/Wayward.gif">
+            </div>
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                Wayward Souls is a top-down shooter that tasks the player with surviving the night in the midst of possessed statues that move towards the player when they aren't watching. Armed with a shotgun with limited ammo, the player must make high-stakes decisions as to which statues are possessed and which are not.
+                <br> <br>
+                I developed this game in one week in an exercise of rapid prototyping.
+            </div>
+        </div>
+        <br style="clear: left;"/>
+    </div>
+    <div class = "portfolioJakeBanner">
+        <div class = "portBannerLeftCol">
+            <div class = "portfolioBannerHeaderText"> Jake's Nightmare </div>
+            <div id="gameplay-video" class="light">
+              <amp-youtube
+                data-videoid="z6-Wouy3U5g"
+                layout="responsive"
+                width="355" height="200">
+              </amp-youtube>
+            </div>
+<!--
+            <div class = "portLeftColImage">
+                <a><img src="../images/jakesNightmareLogo.png"></a> 
+            </div>
+-->
+        </div>
+        <div class = "portBannerMidCol">
+                <img class = "portMidColImageSmall" src="../images/jakes_nightmare_1.gif">
+                <img class = "portMidColImageSmall" src="../images/jakes_nightmare_2.gif">
+        </div>
+        <div class = "portBannerRightCol">
+            <div class = "portBannerRightText">
+                Jake's Nightmare is a 2D cooperative platformer that pairs portal gameplay with an escort mission. Players control Jake's door guardians and must work together to teleport him through a dangerous forest and guide him back to bed.
+                <br> <br>
+                I was the designer and programmer for this game-jam game that won our team 2nd place of 12 teams.
+            </div>
+        </div>
+        <br style="clear: left;"/>
+    </div>
+    <br>
+    <br>
+    <div class="nav">
+        <a href="bio.html">
+            <img id=navbio class="JKButton" src="../images/NavBio.png" 
+                 onmouseover="selectedBio(this)" 
+                 onmouseout="deselectedBio(this)" width="15%" height="auto">
+        </a>
+    </div>
+    <br>
+    <br>
+<!--
     <div class = "portfolioTable">
         <table class="center">
             <tr>
@@ -56,7 +510,6 @@
                             Wayward Souls - Game
                         </div>
                     </div>
-                </td>
                 </td>
             <tr>
                 <td>
@@ -111,7 +564,6 @@
                         </div>
                     </div>
                 </td>
-<!--
                 <td>
                     <a href="naval_warfare_page_protected.html">
                     <img id=navalLogo class=JKButton src="../images/naval_screenshot.PNG" width = 281 height = 241 style="display: block"</img>
@@ -122,9 +574,23 @@
                         </div>
                     </div>
                 </td>
--->
             </tr>
         </table>
     </div>
+-->
+    <script>
+        function selectedLogo(x) {
+        x.src="../images/logo-highlighted.png";   
+    }
+    function deselectedLogo(x) {
+        x.src="../images/logo.png";
+    }
+    function selectedBio(x) {
+        x.src="../images/NavBioSelected.png";   
+    }
+    function deselectedBio(x) {
+        x.src="../images/NavBio.png";
+    }
+    </script>
 </body>
 </html>
